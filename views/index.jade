@@ -4,6 +4,7 @@ head
     meta(charset='utf-8')
     title Backbone.js • TodoMVC
     link(rel='stylesheet', href='bower_components/todomvc-common/base.css')
+    script(data-main='javascripts/main-built', src='javascripts/libs/require.js')
   body
     section#todoapp
       header#header
@@ -45,14 +46,16 @@ head
       <% if (completed) { %>
       <button id="clear-completed">Clear completed (<%= completed %>)</button>
       <% } %>
-    script(src='bower_components/todomvc-common/base.js')
-    script(src='bower_components/jquery/jquery.js')
-    script(src='bower_components/underscore/underscore.js')
-    script(src='bower_components/backbone/backbone.js')
-    script(src='bower_components/backbone.localStorage/backbone.localStorage.js')
-    script(src='javascripts/models/todo.js')
-    script(src='javascripts/collections/todos.js')
-    script(src='javascripts/views/todo-view.js')
-    script(src='javascripts/views/app-view.js')
-    script(src='javascripts/routers/router.js')
-    script(src='javascripts/app.js')
+    
+    //
+     script(src='bower_components/todomvc-common/base.js')
+     script(src='bower_components/jquery/jquery.js')
+     script(src='bower_components/underscore/underscore.js')
+     script(src='bower_components/backbone/backbone.js')
+     script(src='bower_components/backbone.localStorage/backbone.localStorage.js')
+     script(src='javascripts/models/todo.js')
+     script(src='javascripts/collections/todos.js')
+     script(src='javascripts/views/todo-view.js')
+     script(src='javascripts/views/app-view.js')
+     script(src='javascripts/routers/router.js')
+     script(src='javascripts/app.js')
